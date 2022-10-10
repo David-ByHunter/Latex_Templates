@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+% List of packages
+\usepackage[a4paper, margin = 1.5cm]{geometry} % package for changing the layout
+\usepackage[table]{xcolor}
+\usepackage{amsmath} % Package for maths
+\usepackage{float} % Para poder usar H en las figure
+\usepackage{graphicx} % Package for inluding graphic
+\usepackage{setspace} % Package for editing the table of contents
+\usepackage{hyperref} % Package for creating hyèrlinks
+\usepackage{tikz} % Package for creating graphics
+\usepackage[siunitx]{circuitikz} % Package for creating circuits
+\usepackage{listings} % Package for highlight text
+\usepackage{color}
+\usepackage{pdfpages}
+\usepackage[outdir=./]{epstopdf}
+% Package for tables
+\usepackage{siunitx} % Required for alignment of tables
+\usepackage{multirow} % Required for multirows
+\usepackage{booktabs} % For prettier tables
+\usepackage{longtable} % To display tables on several pages
+\usepackage{rotating} % To display tables in landscape
+\usepackage{pgfplotstable} % Generates table from .csv
+\pgfplotsset{compat=newest} % Allows to place the legend below plot
+\usepgfplotslibrary{units} % Allows to enter the units nicely
+% Font Set up
+\usepackage[sfdefault]{roboto}  %% Option 'sfdefault' only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+% Set up of packages
+\sisetup{
+	round-mode          = places, % Rounds numbers
+	round-precision     = 2, % to 2 places
+}
+% Change Language of things
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\contentsname}{Tabla de Contenido}
+\renewcommand{\listfigurename}{Lista de figuras}
+\renewcommand{\listtablename}{Lista de tablas}
+% Document
+\begin{document}
+	\begin{titlepage}
+		\pagenumbering{gobble}		
+	%%	\includepdf[pages=-]{Portada.pdf}
+	\end{titlepage}
+	\newpage
+	\pagenumbering{arabic}
+	\tableofcontents
+	\newpage
+	\section{Apéndice}
+	\listoffigures
+	\listoftables
+\end{document}
