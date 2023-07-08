@@ -43,7 +43,18 @@
 \begin{document}
 	\begin{titlepage}
 		\pagenumbering{gobble}		
-	%%	\includepdf[pages=-]{Portada.pdf}
+	%%	\includepdf[pages=-]{Portada.pdf} % Insert a pdf as cover
+		\raggedleft % Right align the title page
+	
+		\rule{1pt}{\textheight} % Vertical line
+		\hspace{0.05\textwidth} % Whitespace between the vertical line and title page text
+		\parbox[b]{0.75\textwidth}{ % Paragraph box for holding the title page text, adjust the width to move the title page left or right on the page
+		
+		{\Huge\bfseries Título\\[0.5\baselineskip] Sub-título}\\[2\baselineskip] % Title
+		{\Large\textsc{Autor}} % Author name, lower case for consistent small caps
+		
+		\vspace{0.5\textheight} % Whitespace between the title block and the publisher	
+		}
 	\end{titlepage}
 	\newpage
 	\pagenumbering{arabic}
