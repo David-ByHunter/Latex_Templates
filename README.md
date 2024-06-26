@@ -10,3 +10,9 @@ The JSON files contains the author information of said templates
   3. Open TeXstudio
   4. Click on File --> New From Template ...
   5. Select the template you want under user
+
+### Fedora Budgie Atomic
+  1. Make sure you have installed a latex compilator like texlive
+  2. Mkae sure the Commands on settings is well set up
+     2.1.  "/var/usrlocal/texlive/2024/bin/x86_64-linux/pdflatex" -synctex=1 -interaction=nonstopmode %.tex
+  3. Go to /home/userName/.var/app/org.texstudio.TeXstudio/config/texstudio/templates/user
