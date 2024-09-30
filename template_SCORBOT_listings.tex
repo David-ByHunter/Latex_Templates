@@ -1,0 +1,23 @@
+\usepackage{listings}
+\usepackage{color}
+
+\lstset{
+    language=,                     % No specific language
+    basicstyle=\ttfamily\small,     % Use monospaced font and small size
+    keywordstyle=\color{blue}\bfseries, % Keywords in bold blue
+    commentstyle=\color{gray},      % Comments in gray
+    stringstyle=\color{green!50!black}, % Strings in green
+    numbers=left,                   % Line numbers on the left
+    numberstyle=\tiny\color{gray},  % Line numbers style
+    stepnumber=1,                   % Line number increment
+    numbersep=5pt,                  % Distance between line numbers and code
+    showstringspaces=false,         % Don't show spaces in strings
+    tabsize=2,                      % Set tab size
+    breaklines=true,                % Enable line breaking
+    breakatwhitespace=true,         % Only break lines at whitespaces
+    frame=single,                   % Put a frame around the code
+    morekeywords={PROGRAM, SPEED, MOVED, OPEN, CLOSE, END, SETP, SHIFTC}, % ACL-specific keywords
+    morestring=[b]",                % Allow strings with quotes
+    alsoletter={$ $},                 % Recognize '$' as part of keywords
+    moredelim=[s][\color{green!50!black}]{\$}{\ }, % Highlight anything starting with $
+}
