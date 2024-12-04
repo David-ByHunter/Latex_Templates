@@ -5,6 +5,8 @@ The JSON files contains the author information of said templates
 
 ## How to set up
 
+### Windows
+
   1. Go to C:\Users\UserName\AppData\Roaming\texstudio\templates\user
   2. Copy-Paste the templates file .tex & .json
   3. Open TeXstudio
