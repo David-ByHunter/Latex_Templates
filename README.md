@@ -20,3 +20,9 @@ This settings is for configure [TeXstudio](https://www.texstudio.org/)
   2. Make sure the Commands on settings is well set up
      2.1.  "/var/usrlocal/texlive/2024/bin/x86_64-linux/pdflatex" -synctex=1 -interaction=nonstopmode %.tex
   3. Go to /home/userName/.var/app/org.texstudio.TeXstudio/config/texstudio/templates/user
+
+### Ubuntu
+  1. Make sure you have installed a latex compilator like texlive
+       - a) sudo apt install texlive-full
+       - b) sudo apt install texlive-latex-extra
+  2. Go to /home/userName/.config/texstudio/templates/user
